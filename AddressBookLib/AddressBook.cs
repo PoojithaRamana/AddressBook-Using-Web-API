@@ -46,7 +46,7 @@ namespace AddressBookServices
 
         public void DeleteContact(int id)
         {
-            this.DB.Delete<DbContact.Contact>("WHERE ID = @0", id);
+            this.DB.Delete<DbContact.Contact>("WHERE ID ="+id+"");
         }
     }
 }
